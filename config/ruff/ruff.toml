@@ -1,0 +1,20 @@
+target-version = "py310"
+line-length = 120
+
+[lint]
+select = ["E", "F", "B", "Q", "N801", "N802", "N803", "N805", "N806", "ANN", "D"]
+ignore = ["F401"]
+
+[lint.flake8-quotes]
+inline-quotes = "double"
+multiline-quotes = "double"
+docstring-quotes = "double"
+
+[lint.flake8-tidy-imports]
+ban-relative-imports = "all"
+
+[lint.flake8-type-checking]
+strict = true
+
+[lint.isort]
+combine-as-imports = true
